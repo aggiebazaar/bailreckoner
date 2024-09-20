@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bail Reckoner</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Section with National Emblem and Logo -->
+    <header>
+        <div class="emblem">
+            <img src="legal_banner.jpg" alt="Justice">
+        </div>
+        <div class="header-text">
+            <h1>Bail Reckoner</h1>
+            <p>Legal Aid for Bail Eligibility</p>
+        </div>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#eligibility">Check Eligibility</a></li>
+            <li><a href="#lawyers">Find Lawyers</a></li>
+            <li><a href="#laws">Indian Laws</a></li>
+            <li><a href="#resources">Resources</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-banner">
+        <img src="court.jpg" alt="Legal Assistance for Bail">
+        <div class="hero-text">
+            <h2>Empowering Legal Aid for Bail</h2>
+            <p>Assess your eligibility for bail, find experienced lawyers, and explore legal resources.</p>
+        </div>
+    </section>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Bail Eligibility Section -->
+        <section id="eligibility" class="content-section">
+            <h2>Bail Eligibility Assessment</h2>
+            <form id="eligibility-form">
+                <label for="charges">Charges (comma-separated):</label>
+                <input type="text" id="charges" required>
+
+                <label for="imprisonment">Duration of Imprisonment (in days):</label>
+                <input type="number" id="imprisonment" required>
+
+                <button type="submit">Check Eligibility</button>
+            </form>
+            <div id="result"></div>
+        </section>
+
+        <!-- Lawyer Search Section -->
+        <section id="lawyers" class="content-section">
+            <h2>Find a Lawyer</h2>
+            <form id="lawyer-form">
+                <label for="case-name">Case Name:</label>
+                <input type="text" id="case-name" required>
+
+                <label for="experience">Experience Level:</label>
+                <select id="experience">
+                    <option value="junior">Junior (0-2 years)</option>
+                    <option value="mid">Mid-level (3-5 years)</option>
+                    <option value="senior">Senior (5+ years)</option>
+                </select>
+
+                <label for="price-range">Price Range:</label>
+                <select id="price-range">
+                    <option value="low">Low (< ₹40,000)</option>
+                    <option value="medium">₹40,000 - ₹1,00,000</option>
+                    <option value="high">High (> ₹1,00,000)</option>
+                </select>
+
+                <button type="submit">Find Lawyers</button>
+            </form>
+            <div id="lawyer-result"></div>
+        </section>
+
+        <!-- Indian Laws Section -->
+        <section id="laws" class="content-section">
+            <h2>Indian Laws and Sections</h2>
+            <ul>
+                <li><strong>Indian Penal Code (IPC), 1860</strong>
+                    <ul>
+                        <li>Section 302: Punishment for Murder</li>
+                        <li>Section 376: Punishment for Rape</li>
+                    </ul>
+                </li>
+                <li><strong>Code of Criminal Procedure (CrPC), 1973</strong>
+                    <ul>
+                        <li>Section 436: When Bail to be Granted</li>
+                        <li>Section 437: When Bail May be Taken</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Resources Section -->
+        <section id="resources" class="content-section">
+            <h2>Resources for Legal Aid Providers</h2>
+            <p>Guides and legal templates will be available soon.</p>
+            <p>For more information on various acts and rules, visit the <a href="https://doj.gov.in/acts-and-rules/" target="_blank">Ministry of Law and Justice</a>.</p>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Bail Reckoner. All rights reserved.</p>
+        <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

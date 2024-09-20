@@ -1,0 +1,156 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #002654;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.emblem img {
+    width: 80px;
+}
+
+.header-text h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.header-text p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+/* Navigation */
+nav {
+    background-color: #006699;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #004d66;
+    border-radius: 5px;
+}
+
+/* Hero Banner */
+.hero-banner {
+    position: relative;
+    text-align: center;
+    height: 400px; /* Ensures enough height for the content */
+    overflow: hidden; /* Prevents any overflow of content */
+}
+
+.hero-banner img {
+    width: 100%;
+    height: 100%; /* Ensures the image fills the hero section */
+    object-fit: cover; /* Ensures the image scales properly without distorting */
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    width: 80%; /* Adjusts width for better readability */
+    max-width: 700px; /* Ensures text doesn't become too wide */
+}
+
+.hero-text h2 {
+    font-size: 28px; /* Adjust font size for better visibility */
+    margin-bottom: 10px;
+    color: white; /* Set text color to white */
+    background-color: rgba(0, 123, 255, 0.8); /* Blue highlight */
+    padding: 10px; /* Space around the text */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.hero-text p {
+    font-size: 18px; /* Adjust paragraph font size for better readability */
+}
+
+/* Main Content */
+.container {
+    margin: 40px 20px; /* Adds extra margin at the top to avoid overlap */
+}
+
+.content-section {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 40px; /* Adds extra bottom margin to ensure enough spacing */
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #002654; /* Heading color */
+}
+
+label, input, select, button {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+input, select {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #007BFF; /* Button color */
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker button on hover */
+}
+
+/* Footer */
+footer {
+    background-color: #002654;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
